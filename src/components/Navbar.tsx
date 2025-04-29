@@ -25,7 +25,7 @@ const Navbar = () => {
   return (
     <nav className="sm:px-16 px-6 w-full flex items-center py-5 fixed top-0 z-20 bg-secondary">
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        <Link to="/">
+        <Link to=".">
           <p>
             Mirza Andre &nbsp;
             <span className="sm:block hidden">| Fullstack Developer</span>
