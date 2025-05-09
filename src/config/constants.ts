@@ -1,6 +1,22 @@
 import { tech } from "@/assets";
 
-export const techGroups = {
+
+const navLinks = [
+  {
+    id: "about",
+    title: "About",
+  },
+  {
+    id: "work",
+    title: "Work",
+  },
+  {
+    id: "contact",
+    title: "Contact",
+  },
+];
+
+const techGroups = {
   Frontend: [
     { name: "React.js", image: tech.reactjs },
     { name: "Tailwind CSS", image: tech.tailwind },
@@ -47,7 +63,7 @@ export const techGroups = {
 //   // { year: "2014", title: "UGM", role: "Lab Assistant – Digital Electronics" },
 // ];
 
-export const experiences = [
+const experiences = [
   {
     company: "Nawa Data Solutions",
     logo: "/logos/nawa.png",
@@ -93,3 +109,26 @@ export const experiences = [
     tech: ["Android", "Java"],
   },
 ];
+
+const projects = [
+  {
+    title: "One Apps",
+    description:
+      "Mobile and web app for bill reconciliation with image capture, reporting, and supervision.",
+    tech: ["React Native", ".NET", "PostgreSQL", "Kubernetes", "GCP"],
+  },
+  {
+    title: "Taldio",
+    description:
+      "Job seeking platform connecting talents with employers. Built mobile and backend systems.",
+    tech: ["React Native", ".NET Core", "MSSQL"],
+  },
+  {
+    title: "eBrochure",
+    description:
+      "iOS app to present and calculate insurance product offerings.",
+    tech: ["React Native", "XCode"],
+  },
+];
+
+export { navLinks, techGroups, experiences, projects };

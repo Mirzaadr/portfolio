@@ -3,27 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import SectionWrapper from "./SectionWrapper";
 import { textVariant } from "@/lib/motion";
 import styles from "@/lib/styles";
-
-const projects = [
-  {
-    title: "One Apps",
-    description:
-      "Mobile and web app for bill reconciliation with image capture, reporting, and supervision.",
-    tech: ["React Native", ".NET", "PostgreSQL", "Kubernetes", "GCP"],
-  },
-  {
-    title: "Taldio",
-    description:
-      "Job seeking platform connecting talents with employers. Built mobile and backend systems.",
-    tech: ["React Native", ".NET Core", "MSSQL"],
-  },
-  {
-    title: "eBrochure",
-    description:
-      "iOS app to present and calculate insurance product offerings.",
-    tech: ["React Native", "XCode"],
-  },
-];
+import { projects } from "@/config/constants";
 
 const FeaturedProjects = () => {
   return (

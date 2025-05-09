@@ -1,21 +1,7 @@
+import { navLinks } from "@/config/constants";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
-const navLinks = [
-  {
-    id: "about",
-    title: "About",
-  },
-  {
-    id: "work",
-    title: "Work",
-  },
-  {
-    id: "contact",
-    title: "Contact",
-  },
-];
 
 const Navbar = () => {
   const [active, setActive] = useState("");
