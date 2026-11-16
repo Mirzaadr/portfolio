@@ -3,17 +3,17 @@ import { Card, CardContent } from "@/components/ui/card";
 import SectionWrapper from "./SectionWrapper";
 import { textVariant } from "@/lib/motion";
 import styles from "@/lib/styles";
-import { projects } from "@/config/constants";
+import type { ProjectsContent } from "@/content/portfolio.types";
 
-const FeaturedProjects = () => {
+const FeaturedProjects = ({ content }: { content: ProjectsContent }) => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My works</p>
-        <h2 className={styles.sectionHeadText}>Featured Projects</h2>
+        <p className={styles.sectionSubText}>{content.eyebrow}</p>
+        <h2 className={styles.sectionHeadText}>{content.heading}</h2>
       </motion.div>
       <div className="grid md:grid-cols-3 gap-6 mt-20">
-        {projects.map((project, index) => (
+        {content.items.map((project, index) => (
           <motion.div
             key={index}
             whileHover={{ scale: 1.05 }}

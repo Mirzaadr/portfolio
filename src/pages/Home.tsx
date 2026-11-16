@@ -4,40 +4,31 @@ import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/FeaturedProjects";
 import Tech from "@/components/Tech";
-import { useEffect } from "react";
 import Contact from "@/components/Contact";
+import portfolioJson from "@/content/portfolio.json";
+import type { PortfolioContent } from "@/content/portfolio.types";
+import { useEffect } from "react";
+
+const content: PortfolioContent = portfolioJson;
 
 export default function Home() {
   useEffect(() => {
-    document.title = "Mirza Andre | Fullstack Developer";
+    document.title = content.documentTitle;
   }, []);
 
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white w-full">
       <div className="bg-cover bg-no-repeat">
-        <Navbar />
-        {/* Hero Section */}
-        <Hero />
+        <Navbar content={content.navbar} />
+        <Hero content={content.hero} socialLinks={content.socialLinks} />
       </div>
-
-      {/* About Section */}
-      <About />
-
-      {/* Timeline Section */}
-      <Experience />
-
-      {/* Tech Stack Section */}
-      <Tech />
-
-      {/* Projects Section */}
-      <Projects />
-
-      {/* Contact Section */}
-      <Contact />
-
-      {/* Footer */}
+      <About content={content.about} />
+      <Experience content={content.experience} />
+      <Tech content={content.tech} />
+      <Projects content={content.projects} />
+      <Contact content={content.contact} socialLinks={content.socialLinks} />
       <footer className="mt-16 h-16 text-center text-sm text-gray-500 dark:text-gray-400">
-        Built with React & Framer Motion — © 2025 Mirza Andre
+        {content.footer}
       </footer>
     </div>
   );

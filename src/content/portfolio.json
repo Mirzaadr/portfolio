@@ -1,0 +1,198 @@
+{
+  "documentTitle": "Mirza Andre | Fullstack Developer",
+  "navbar": {
+    "brandName": "Mirza Andre",
+    "brandTagline": "Fullstack Developer",
+    "labels": {
+      "about": "About",
+      "work": "Works",
+      "contact": "Contacts"
+    }
+  },
+  "hero": {
+    "heading": "Hi, I'm Mirza Andre",
+    "subtitleLine1": "Fullstack Developer | Mobile & Web Engineer.",
+    "subtitleLine2": "Building clean, scalable apps for real-world impact.",
+    "aboutLabel": "About Me",
+    "projectsLabel": "View Projects"
+  },
+  "socialLinks": {
+    "github": "https://github.com/Mirzaadr",
+    "linkedin": "https://www.linkedin.com/in/mirza-adr"
+  },
+  "about": {
+    "eyebrow": "Introduction",
+    "heading": "About Me",
+    "description": "I’m a detail-oriented fullstack developer with solid experience in mobile and web development. I specialize in building scalable applications using React, React Native, and .NET Core. I have contributed to several impactful projects and enjoy creating smooth, user-centric digital solutions."
+  },
+  "experience": {
+    "eyebrow": "What I've done so far",
+    "heading": "Work Experience",
+    "items": [
+      {
+        "company": "Nawa Data Solutions",
+        "logo": "/logos/nawa.png",
+        "title": "Fullstack Developer",
+        "duration": "2021 – 2023",
+        "description": [
+          "Developed and deployed mobile & web apps for clients according to their needs.",
+          "Maintain and fixed bugs in existing applications.",
+          "Collaborated with product managers and business analysts to gather requirements and deliver solutions."
+        ],
+        "tech": [
+          ".NET Core",
+          "React Native",
+          "React JS",
+          "SQL Server",
+          "PostgreSQL",
+          "Kubernetes",
+          "GCP"
+        ]
+      },
+      {
+        "company": "Taldio",
+        "logo": "/logos/nawa.png",
+        "title": "Mobile Developer",
+        "duration": "2020 – 2021",
+        "description": [
+          "Developed and deployed mobile apps for job seeking platform.",
+          "Collaborated with web and design team to integrate features and ensure consistency.",
+          "Implemented features and fixed bugs in React Native and .NET Core."
+        ],
+        "tech": [
+          "React Native",
+          ".NET Core",
+          "SQL Server"
+        ]
+      },
+      {
+        "company": "Patpat Studio",
+        "logo": "/logos/patpat.png",
+        "title": "Freelance Programmer",
+        "duration": "2017 – 2018",
+        "description": [
+          "Built Android applications for clients.",
+          "Handled the design and development of the application.",
+          "Collaborated with clients to gather requirements and deliver solutions."
+        ],
+        "tech": [
+          "Android",
+          "Java"
+        ]
+      }
+    ]
+  },
+  "tech": {
+    "eyebrow": "Technologies I've worked with",
+    "heading": "Tech Stack",
+    "groups": [
+      {
+        "label": "Frontend",
+        "items": [
+          {
+            "name": "React.js",
+            "asset": "reactjs"
+          },
+          {
+            "name": "Tailwind CSS",
+            "asset": "tailwind"
+          }
+        ]
+      },
+      {
+        "label": "Backend",
+        "items": [
+          {
+            "name": ".NET Core",
+            "asset": "dotnetcore"
+          },
+          {
+            "name": "Node.js",
+            "asset": "nodejs"
+          },
+          {
+            "name": "SQL Server",
+            "asset": "sqlserver"
+          },
+          {
+            "name": "PostgreSQL",
+            "asset": "postgresql"
+          }
+        ]
+      },
+      {
+        "label": "Mobile",
+        "items": [
+          {
+            "name": "React Native",
+            "asset": "reactjs"
+          },
+          {
+            "name": "Flutter",
+            "asset": "flutter"
+          }
+        ]
+      },
+      {
+        "label": "Tools",
+        "items": [
+          {
+            "name": "Docker",
+            "asset": "docker"
+          },
+          {
+            "name": "Kubernetes",
+            "asset": "kubernetes"
+          },
+          {
+            "name": "GCP",
+            "asset": "googlecloud"
+          },
+          {
+            "name": "Figma",
+            "asset": "figma"
+          }
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "eyebrow": "My works",
+    "heading": "Featured Projects",
+    "items": [
+      {
+        "title": "One Apps",
+        "description": "Mobile and web app for bill reconciliation with image capture, reporting, and supervision.",
+        "tech": [
+          "React Native",
+          ".NET",
+          "PostgreSQL",
+          "Kubernetes",
+          "GCP"
+        ]
+      },
+      {
+        "title": "Taldio",
+        "description": "Job seeking platform connecting talents with employers. Built mobile and backend systems.",
+        "tech": [
+          "React Native",
+          ".NET Core",
+          "MSSQL"
+        ]
+      },
+      {
+        "title": "eBrochure",
+        "description": "iOS app to present and calculate insurance product offerings.",
+        "tech": [
+          "React Native",
+          "XCode"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Let’s Connect",
+    "description": "Interested in working together or have a question? Reach out!"
+  },
+  "footer": "Built with React & Framer Motion — © 2025 Mirza Andre"
+}

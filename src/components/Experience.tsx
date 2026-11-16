@@ -1,15 +1,15 @@
-import { experiences } from "@/config/constants";
+import type { ExperienceContent } from "@/content/portfolio.types";
 import { textVariant } from "@/lib/motion";
 import styles from "@/lib/styles";
 import { motion } from "framer-motion";
 import SectionWrapper from "./SectionWrapper";
 
-const Experience = () => {
+const Experience = ({ content }: { content: ExperienceContent }) => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>What I've done so far</p>
-        <h2 className={styles.sectionHeadText}>Work Experience</h2>
+        <p className={styles.sectionSubText}>{content.eyebrow}</p>
+        <h2 className={styles.sectionHeadText}>{content.heading}</h2>
       </motion.div>
 
       <div className="relative max-w-5xl mx-auto px-6 mt-20">
@@ -18,7 +18,7 @@ const Experience = () => {
 
         {/* Experience entries */}
         <div className="flex flex-col space-y-20">
-          {experiences.map((exp, index) => (
+          {content.items.map((exp, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, x: -50 }}

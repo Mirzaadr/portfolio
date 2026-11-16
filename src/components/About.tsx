@@ -3,23 +3,21 @@ import { motion } from "framer-motion";
 import SectionWrapper from "./SectionWrapper";
 import styles from "@/lib/styles";
 
-const About = () => {
+import type { AboutContent } from "@/content/portfolio.types";
+
+const About = ({ content }: { content: AboutContent }) => {
   return (
     <>
       <motion.div variants={textVariant()}>
         {/* <h2 className="text-2xl font-semibold mb-4"></h2> */}
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>About Me</h2>
+        <p className={styles.sectionSubText}>{content.eyebrow}</p>
+        <h2 className={styles.sectionHeadText}>{content.heading}</h2>
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="text-gray-700 dark:text-gray-300 max-w-3xl mt-4 text-[17px] leading-[30px]"
       >
-        I’m a detail-oriented fullstack developer with solid experience in
-        mobile and web development. I specialize in building scalable
-        applications using React, React Native, and .NET Core. I have
-        contributed to several impactful projects and enjoy creating smooth,
-        user-centric digital solutions.
+        {content.description}
       </motion.p>
     </>
   );
