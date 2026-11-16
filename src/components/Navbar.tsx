@@ -1,7 +1,6 @@
 import { navLinks } from "@/config/constants";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -11,12 +10,12 @@ const Navbar = () => {
   return (
     <nav className="sm:px-16 px-6 w-full flex items-center py-5 fixed top-0 z-20 bg-secondary">
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        <Link to=".">
+        <a href={import.meta.env.BASE_URL}>
           <p>
             Mirza Andre &nbsp;
             <span className="sm:block hidden">| Fullstack Developer</span>
           </p>
-        </Link>
+        </a>
 
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
